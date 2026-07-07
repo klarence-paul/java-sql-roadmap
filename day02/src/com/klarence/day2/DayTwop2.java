@@ -13,10 +13,10 @@ public class DayTwop2 {
         int b = a % 2;
 
         if (b == 0) {
-            System.out.println(a + " The number is even.");
+            System.out.println(a + " is even.");
         }
         else {
-            System.out.println(a + " The number is odd.");
+            System.out.println(a + " is odd.");
         }
 
         scanner.close();
