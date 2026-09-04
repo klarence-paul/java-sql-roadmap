@@ -33,6 +33,6 @@ public class gradeCalMethod {
 
         char grade = calculateGrade(score);
         System.out.println("Your grade is: " + grade);
-
+ scanner.close();
     }
 }
