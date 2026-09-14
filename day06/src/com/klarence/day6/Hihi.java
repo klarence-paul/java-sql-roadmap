@@ -4,7 +4,7 @@ package com.klarence.day6;
 public class Hihi {
     public static void main(String[] args) {
         String name = "Klarence";
-        name.toUpperCase();   
+        name = name.toUpperCase();   
         
         System.out.println(name);     
 
