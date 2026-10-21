@@ -23,6 +23,7 @@ public class EmailValidator {
         return;
     }
 
+
     if (atIndex != email.lastIndexOf("@")) {
         System.out.println("Invalid email: more than one @ symbol.");
         return;
@@ -31,10 +32,17 @@ public class EmailValidator {
     String username = email.substring(0, atIndex);
     String domain = email.substring(atIndex + 1);
 
+
     if (username.isEmpty() || domain.isEmpty()) {
         System.out.println("Invalid email: missing username or domain.");
         return;
     }
+
+    if (domain.indexOf(".") == -1) {
+      System.out.println("Invalid email: domain needs a dot (like gmail.com).");
+      return;
+    }
+
 
     System.out.println("Cleaned email: " + email);
     System.out.println("Username: " + username);
